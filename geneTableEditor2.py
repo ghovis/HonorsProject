@@ -1,3 +1,14 @@
+import sys
+import re
+import csv
+import copy
+import os
+import linecache
+from collections import defaultdict
+from Bio import SeqIO
+
+csv.field_size_limit(100000000)
+
 #function takes in a parameter, the parameter will be an absolute file pathway
 # to the gene table file (should be .csv file from prokkaReformat.py)
 #(ex:/Users/marielelensink/Documents/H2/GeneTable1Edit.csv)
